@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Олеся Сыртина](https://up.htmlacademy.ru/htmlcss/33/user/1942869).
-* Наставник: `Анна Вараксина`(https://htmlacademy.ru/profile/id153610)
+* Наставник: [Анна Вараксина](https://htmlacademy.ru/profile/id153610)
 
 ---
 
