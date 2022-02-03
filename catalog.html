@@ -9,7 +9,7 @@
     <header class="main-header">
       <nav class="navigation">
       <a class="navigation-logo" href="index.html">
-      <img class="main-header-logo" src="images/header/logo.svg" width="139" height="70" alt="Логотип сайта города Седоны">
+        <svg class="main-header-logo"  width="139" height="70" xmlns="../images/header/logo.svg" alt="Логотип сайта города Седоны"></svg>
       </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -39,7 +39,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Хочу сюда!</a>
+            <a class="button navigation-link" href="index.html">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -109,14 +109,13 @@
           <button class="button-reset" type="reset">Сбросить</button>
         </form>
       </section>
-      <section class="select-type">
-        <p class="select-title">Найдено гостиниц:38</p>
+      <p class="select-title">Найдено гостиниц:38</p>
+      <div class="select-container">
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
-      </section>
         <a href="#" class="button">
           <span class="visually-hidden">Показать карточки</span>
         </a>
@@ -126,12 +125,13 @@
         <a class="button button-light" href="#">
           <span class="visually-hidden">Показать список</span>
         </a>
+      </div>
       <section class="product-result">
         <h2 class="visually-hidden">Подобранные гостиницы</h2>
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/hotels/hotel-1.jpg" width="299" height="206" alt="Amara Resort & Spa">
+              <img class="product-card-image" src="../images/hotels/hotel-1.jpg" width="299" height="206" alt="Amara Resort & Spa">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
             </a>
             <p class="product-card-subtitle">Гостиница</p>
@@ -142,39 +142,39 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/hotels/hotel-2.jpg" width="299" height="206" alt="Desert Quail Inn">
+              <img class="product-card-image" src="../images/hotels/hotel-2.jpg" width="299" height="206" alt="Desert Quail Inn">
               <h3 class="product-card-title">Desert Quail Inn</h3>
             </a>
             <p class="product-card-subtitle">Гостиница</p>
             <b class="product-card-price">От 3000&#x584;</b>
-            <a class="product-card-description" href="#">Подробнее</a>
+            <a class="product-card-description button" href="#">Подробнее</a>
             <a class="product-card-select" href="#">В избранное</a>
             <b class="rating">Рейтинг: 8,9</b>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/hotels/hotel-3.jpg" width="299" height="206" alt="Villas at Poco Diablo">
+              <img class="product-card-image" src="../images/hotels/hotel-3.jpg" width="299" height="206" alt="Villas at Poco Diablo">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
             </a>
             <p class="product-card-subtitle">Гостиница</p>
             <b class="product-card-price">От 2000&#x584;</b>
-            <a class="product-card-description" href="#">Подробнее</a>
+            <a class="product-card-description button" href="#">Подробнее</a>
             <a class="product-card-select" href="#">В избранное</a>
             <b class="rating">Рейтинг: 9,2</b>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/hotels/hotel-4.jpg" width="299" height="206" alt="GreenTree Inn">
+              <img class="product-card-image" src="../images/hotels/hotel-4.jpg" width="299" height="206" alt="GreenTree Inn">
               <h3 class="product-card-title">GreenTree Inn</h3>
             </a>
             <p class="product-card-subtitle">Гостиница</p>
             <b class="product-card-price">От 3000&#x584;</b>
-            <a class="product-card-description" href="#">Подробнее</a>
+            <a class="product-card-description button" href="#">Подробнее</a>
             <a class="product-card-select" href="#">В избранное</a>
             <b class="rating">Рейтинг: 9,2</b>
           </li>
         </ul>
-      <a class="button-product-more" href="#">Загрузить еще</a>
+      <a class="product-more-button" href="#">Загрузить еще</a>
       </section>
       <div class="pagination">
         <ul class="pagination-list">
@@ -208,8 +208,8 @@
           <option value="5">5</option>
         </select>
       </div>
-      <section class="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+      <section class="inner-subscribe">
+        <h2 class="inner-subscribe-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
           <label class ="visually-hidden" for="subscribe-email">Ваш e-mail</label>
@@ -246,7 +246,7 @@
       <section class="footer-htmlacademy">
         <h2 class="visually-hidden">HTML Academy</h2>
         <a class="footer-htmlacademy-link" href="https://htmlacademy.ru">
-        <img src="images/footer/logo-htmlacademy.svg" width="115" height="34" alt="Логотип сайта HTML Академии">
+        <svg xmlns="../images/footer/logo-htmlacademy.svg" width="115" height="34" alt="Логотип сайта HTML Академии"></svg>
         </a>
       </section>
     </footer>
