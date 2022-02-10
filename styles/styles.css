@@ -22,7 +22,9 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  width: 1200px;
   min-height: 100%;
+  margin: 0 auto;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 23px;
@@ -39,8 +41,8 @@ body {
 
 .navigation {
   display: flex;
-  width: 1000px;
   margin: 0 auto;
+  padding: 0 70px;
 }
 
 .navigation-logo {
@@ -79,11 +81,6 @@ body {
   background: #ffffff;
 }
 
-.main-inner {
-  color: #000000;
-  background: #ffffff;
-}
-
 .page-container {
   margin: 0 auto;
 }
@@ -106,7 +103,7 @@ body {
   margin: 0 auto;
   font-size: 30px;
   line-height: 36px;
-  font-weight: 720px;
+  font-weight: 700;
   color: inherit;
   text-align: center;
   text-transform: uppercase;
@@ -139,28 +136,19 @@ body {
   color: #333333;
 }
 
+.advantages-item {
+  width: 360px;
+  padding: 20px;
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #000000;
+}
+
 .advantages-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
-}
-
-.advantages-title-dark {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-
-.advantages-item {
-  width: 360px;
-  padding: 20px;
-  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-item-dark {
@@ -331,7 +319,6 @@ body {
   text-decoration: none;
 }
 
-
 .main-footer-container {
   display: flex;
   width: 1200px;
@@ -384,6 +371,7 @@ body {
 .catalog-products {
   display: flex;
   font-weight: 400;
+  margin-right: 20px;
   color: #000000;
 }
 
@@ -437,10 +425,6 @@ body {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.product-result {
-
 }
 
 .pagination {
