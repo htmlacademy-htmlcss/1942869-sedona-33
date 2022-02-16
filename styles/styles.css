@@ -99,6 +99,11 @@ body {
   background: #ffffff;
 }
 
+.main-inner {
+ margin: 0;
+ padding: 0;
+}
+
 .page-container {
   margin: 0 auto;
 }
@@ -296,6 +301,13 @@ body {
 }
 
 .product-more-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 64px;
+  height: 60px;
+  width: 620px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -330,6 +342,7 @@ body {
 
 .subscribe {
   display: block;
+  box-sizing: border-box;
   height: 411px;
   font-size: 22px;
   line-height: 26px;
@@ -340,7 +353,7 @@ body {
   background-repeat: no-repeat;
   color: #FFFFFF;
   margin-top: 93px;
-  padding: 0;
+  padding: 94px 200px 93px;
 }
 
 .subscribe-title {
@@ -351,11 +364,11 @@ body {
   text-transform: uppercase;
   color: inherit;
   margin: 0;
-  padding: 94px 240px 29px;
+  padding-bottom: 29px;
 }
 
 .subscribe-subtitle {
-  padding: 0 240px 46px;
+  padding-bottom: 46px;
   margin: 0;
 }
 
@@ -375,6 +388,10 @@ body {
   max-width: 107px;
 }
 
+.footer-social a {
+  background: #83B3D3;
+}
+
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
@@ -391,6 +408,7 @@ body {
 
 .footer-social-item:nth-child(3n) {
   margin-right: 0;
+  background-color: #83B3D3;
 }
 
 .footer-contacts {
@@ -452,8 +470,7 @@ body {
   font-weight: 400;
   color: inherit;
   text-decoration: none;
-  margin: 0;
-  padding: 0;
+  margin-right: 11px;
 }
 
 .catalog-products {
@@ -464,18 +481,16 @@ body {
 
 .catalog-filter {
   display: flex;
-  flex-direction: row;
-  width: 150px;
 }
 
 .catalog-filter-group {
-  margin: 0;
+  margin-right: 67px;
   padding: 0;
 }
 
 .catalog-filter-list {
   list-style-type: none;
-  margin-right: 67px;
+  margin: 0;
   padding: 0;
 }
 
@@ -489,31 +504,83 @@ body {
 }
 
 .catalog-filter-item {
-  padding: 0;
+  padding-bottom: 13px;
   margin: 0 ;
 }
 
-.select-title {
+.sorting-container {
+  display: flex;
+  align-items: center;
+  padding: 39px 75px 72px 68px;
+  margin: 0;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.sorting-title {
   font-size: 30px;
   line-height: 39px;
   font-weight: 700;
   color: inherit;
   text-transform: uppercase;
   margin: 0;
-  padding: 44px 192px 56px 71px;
+  padding: 0;
+  padding-right: 192px;
 }
 
-.select-container {
-  color: #000000;
-  background-color: #ffffff;
+.sorting-control {
+  display: flex;
+  font-size: 18px;
+  line-height: 23px;
+  margin-right: 81px;
+  padding: 0;
+  border: 2px solid #E6E6E6;
+}
+
+.sorting-container .button {
+  width: 48px;
+  height: 48px;
+  background-color:#ffffff;
+  border: 2px solid #000000;
+  margin: 0;
+  margin-left: 8px;
+  padding: 0;
+}
+
+.sorting-container .button-light {
+  border: 2px solid #E6E6E6;
+}
+
+.product-result {
+  width: auto;
+  margin: 0 75px 11px 69px;
+  padding: 0;
+}
+
+.product-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .product-card {
+  display:flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+  margin-right: 10px;
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
   color: #333333;
   background-color: #ffffff;
+}
+
+.product-card:nth-child(3n) {
+  margin-right: 0px;
 }
 
 .product-card-link {
@@ -525,6 +592,8 @@ body {
   line-height: 31px;
   font-weight: 700;
   color: #000000;
+  margin: 0;
+  padding-bottom: 16px;
 }
 
 .rating {
@@ -536,22 +605,53 @@ body {
 }
 
 .pagination {
-  background-color: #83B3D3;
+  display: flex;
+  margin: 0;
+  padding: 0 75px 73px 69px;
+}
+
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding-right: 300px;
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
+  padding: 14px 20px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  text-align: center;
   text-decoration: none;
+  border-radius: 4px;
   color: #ffffff;
   background-color: #83B3D3;
 }
 
 .pagination-current {
   color: #000000;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
+}
+
+.product-quantity {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.product-quantity-control {
+  margin-left: 51px;
+  padding: 0;
 }
 
 .inner-subscribe {
@@ -562,14 +662,17 @@ body {
   color: #000000;
   background-color: #ffffff;
   margin: 0;
-  padding: 0;
+  padding: 0 200px 141px 197px;
 }
 
-.subscribe-title {
+.inner-subscribe-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   color: inherit;
+  margin: 0;
+  padding-bottom: 46px;
 }
+
