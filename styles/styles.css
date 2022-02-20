@@ -282,9 +282,14 @@ body {
   text-transform: uppercase;
 }
 
-.button-complex {
+.catalog-filter-button-complex {
+  display:flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
+  width: 160px;
+  height: 48px;
+  border-radius: 4px;
 }
 
 .button-apply {
@@ -333,12 +338,13 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
-  background-color: #83B3D3;
+  background-color: #756257;
+  width: 140px;
 }
 
-.description {
+.select {
   color: #ffffff;
-  background-color: #756257;
+  background-color: #83B3D3;
 }
 
 .hotel-search .button  {
@@ -451,12 +457,12 @@ body {
 }
 
 .inner-header {
-  height: 100%;
   background-image: url("../images/catalog-background.jpg");
+  height: 100%;
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #ffffff;
-  padding: 35px 72px 0;
+  padding: 35px 71px 0;
   margin: 0;
 }
 
@@ -475,7 +481,6 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  padding-bottom: 45px;
 }
 
 .breadcrumbs-link {
@@ -490,7 +495,8 @@ body {
 .catalog-products {
   font-weight: 400;
   margin: 0;
-  padding: 0;
+  padding-top: 45px;
+  padding-bottom: 55px;
 }
 
 .catalog-filter {
@@ -597,6 +603,12 @@ body {
   grid-column: 2/3 ;
 }
 
+.product-card-image {
+  width: 300px;
+  object-fit:contain;
+  background-color:#F2F2F2;
+}
+
 .product-card-title-link {
   grid-column: 2/3 ;
   text-decoration: none;
@@ -637,10 +649,12 @@ body {
   border-radius: 4px;
   background-color: #F2F2F2;
   margin: 0;
+  width: 160px;
 }
 
 .pagination {
   display: flex;
+  justify-content: space-between;
   margin: 60px 72px 73px;
   padding: 0;
 }
@@ -648,7 +662,7 @@ body {
 .pagination-list {
   display: flex;
   margin: 0;
-  padding-right: 300px;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -678,6 +692,7 @@ body {
 
 .product-quantity {
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   font-size: 18px;
@@ -686,7 +701,11 @@ body {
 
 .product-quantity-control {
   margin-left: 51px;
-  padding: 0;
+  padding: 13px 17px 12px;
+  border: 2px solid #E6E6E6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 160px;
 }
 
 .inner-subscribe {
