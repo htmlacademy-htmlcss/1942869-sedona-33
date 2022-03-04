@@ -348,24 +348,62 @@
       </div>
     </footer>
     <div class="modal-container">
-      <div class="modal modal-auth">
+      <div class="modal modal-search">
         <button class="modal-close-button">
+          <svg class="modal-close-icon" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/></svg>
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        </section>
-        <section class="appointment">
           <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="field-group appointment-form-date">
-              <label for="appointment-date">Дата заезда</label>
-              <input class="field" type="date" id="appointment-date" name="appointment-date" placeholder="27 апреля 2020">
-            </p>
-            <p class="field-group appointment-form-date">
-              <label for="appointment-date">Дата выезда</label>
-              <input class="field" type="date" id="appointment-date" name="appointment-date" placeholder="1 сентября 2021">
-          </p>
-          <button class="button auth-form-button" type="submit">Найти</button>
+            <section class="field-group appointment-form-date">
+              <label for="appointment-date">Дата заезда:</label>
+              <input class="field field-invalid" type="text" id="appointment-date" name="appointment-date" value="27 апреля 2020">
+              <a class="calendar" href="#"></a>
+            </section>
+            <span class="subfield-text invalid-text">Мы не можем отправить вас в прошлое.</span>
+            <section class="field-group appointment-form-date">
+              <label for="appointment-date">Дата выезда:</label>
+              <input class="field field-valid" type="text" id="appointment-date" name="appointment-date" value="1 сентября 2021">
+              <a class="calendar" href="#"></a>
+            </section>
+            <span class="subfield-text valid-text">На эти даты есть свободные номера. Пока есть.</span>
+            <div class="field-group-wrapper">
+              <section class="field-group form-adults-number">
+                <label for="adults-number">Взрослые:</label>
+                <div class="field-button-complex">
+                  <button class="button-minus" type="button">
+                    <svg class="icon-minus" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
+                  </button>
+                  <input class="field" type="text" id="adults-number" name="adults-number" value="2">
+                  <button class="button-plus" type="button">
+                    <svg class="icon-plus" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+                  </button>
+                </div>
+              </section>
+              <section class="field-group form-children-number">
+                <label for="children-number">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#fff"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h1v9H0z"/></clipPath></defs></svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами,возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    </span>
+                  </span>
+                <div class="field-button-complex">
+                  <button class="button-minus" type="button">
+                    <svg class="icon-minus" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
+                  </button>
+                  <input class="field" type="text" id="children-number" name="children-number" value="1">
+                  <button class="button-plus" type="button">
+                    <svg class="icon-plus" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+            <button class="button modal-search-button" type="submit">Найти</button>
+          </form>
+        </section>
       </div>
     </div>
   </body>
