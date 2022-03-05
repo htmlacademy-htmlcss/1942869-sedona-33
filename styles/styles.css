@@ -1518,6 +1518,7 @@ body {
   z-index:1;
 }
 
+.catalog-filter-label-min:focus,
 .catalog-filter-label-min:focus {
   border: 2px solid #FFFFFF;
   box-shadow:
