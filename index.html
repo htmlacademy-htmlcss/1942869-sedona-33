@@ -32,13 +32,13 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link navigation-favorite" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="17" viewBox="0 0 19 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M9.44 17c-.3 0-.6-.1-.8-.4-5.41-6.1-6.72-7.5-7.02-7.9A5.4 5.4 0 0 1 6.03 0c1.3 0 2.51.5 3.51 1.3a5.47 5.47 0 0 1 9.03 4.1c0 1.3-.5 2.5-1.3 3.4l-7.02 7.9c-.2.2-.4.3-.8.3ZM3.43 7.5c.3.4 3.5 4 6.11 6.9l6.22-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2.01.5-2.71 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.72-1.3c-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
                 <span class="visually-hidden">Избранное.</span>
                 <span class="favorite-number">12</span>
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item user-button">
               <a class="button navigation-link" href="#search">Хочу сюда!</a>
             </li>
           </ul>
@@ -64,7 +64,9 @@
                   <p class="advantages-number">&#8212; &#8470;1 &#8212;</p>
                   <p class="advantages-description">Седона — не аттракцион для&nbsp;туристов, там течёт своя&nbsp;жизнь</p>
                 </div>
-                <img class="town" src="./images/advantages/town.jpg" width="800" height="384" alt="Улицы Седоны.">
+                <div class="advantages-image">
+                  <img class="town" src="./images/advantages/town.jpg" width="800" height="384" alt="Улицы Седоны.">
+                </div>
                 <ul class="advantages-subitems">
                   <li class="advantages-subitem">
                     <b class="advantages-title house">Жильё</b>
@@ -81,7 +83,9 @@
                 </ul>
               </li>
               <li class="advantages-item-wrapper">
-                <img class="bridge" src="./images/advantages/bridge.jpg" width="800" height="384" alt="Мост дьявола.">
+                <div class="advantages-image">
+                  <img class="bridge" src="./images/advantages/bridge.jpg" width="800" height="384" alt="Мост дьявола.">
+                </div>
                 <div class="advantages-item advantages-item-white">
                   <h3 class="advantages-title">Там есть мост&nbsp;дьявола</h3>
                   <p class="advantages-number">&#8212; &#8470;2 &#8212;</p>
@@ -123,7 +127,7 @@
               <p class="subscribe-subtitle">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
               <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
                 <label class ="visually-hidden" for="subscribe-email">Ваш e-mail.</label>
-                <input class="subscribe-email error" type="email" name="subscribe-email" id="subscribe-email" placeholder="Ваш e-mail">
+                <input class="subscribe-email" type="email" name="subscribe-email" id="subscribe-email" placeholder="Ваш e-mail">
                 <button class="button subscribe-form-button" type="submit">Подписаться</button>
               </form>
             </section>
@@ -208,7 +212,7 @@
                 <label for="children-number">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                      <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#fff"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h1v9H0z"/></clipPath></defs></svg>
+                      <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#fff"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></g><defs><clipPath id="inf"><path fill="#fff" d="M0 0h1v9H0z"/></clipPath></defs></svg>
                     </button>
                     <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами,возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                     </span>
